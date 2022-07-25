@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'user/:id', component: UserComponent},
   { path: 'users', component: UsersComponent },
   { path: 'photos', component: ContainerPhotosComponent },
-  { path: 'photo-id:id', component: PhotoIdComponent },  
+  { path: 'photo-id/:id', component: PhotoIdComponent },  
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: '**', component: Error404Component}
 ];
