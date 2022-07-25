@@ -9,7 +9,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ Photos.title }}</h5>
           <p class="card-text">Albun: {{ Photos.albumId }} Foto número: {{ Photos.id }}</p>
-          <a href="{{ Photos.url }}" class="btn btn-primary">Ver imagen</a>
+          <a [routerLink]="['/photo-id', Photos.id]" class="btn btn-primary">Ver imagen</a>
         </div>
       </div>
       

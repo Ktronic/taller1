@@ -10,6 +10,7 @@ export class AppComponent {
     { path: '/home', name: 'Home'},
     { path: '/users', name: 'Users'},
     { path: '/photos', name: 'Photos'}
+    
   ];
 }
 

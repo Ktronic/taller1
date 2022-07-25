@@ -1,0 +1,20 @@
+<div class="container">
+
+    <div class="row">
+   <!-- la que se tendria que repetir con el *ngFor -->
+      <div class="col-4" *ngIf="photo;">
+  
+        <div  class="card" style="width: 20rem;">
+          <img src="{{ photo.thumbnailUrl }}" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">{{ photo.title }}</h5>
+            <p class="card-text">Albun: {{ photo.albumId }} Foto número: {{ photo.id }}</p>
+            <a [routerLink]="['/photo-id', photo.id]" class="btn btn-primary">Ver imagen</a>
+          </div>
+        </div>
+        
+      </div>
+  
+  
+  
+  </div>

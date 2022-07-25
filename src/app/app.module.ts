@@ -13,6 +13,7 @@ import { UsersComponent } from './pages/users/users.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { CardExampleComponent } from './components/card-example/card-example.component';
 import { ContainerPhotosComponent } from './pages/container-photos/container-photos.component';
+import { PhotoIdComponent } from './pages/photo-id/photo-id.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContainerPhotosComponent } from './pages/container-photos/container-pho
     UsersComponent,
     Error404Component,
     CardExampleComponent,
-    ContainerPhotosComponent
+    ContainerPhotosComponent,
+    PhotoIdComponent
   ],
   imports: [
     BrowserModule,
