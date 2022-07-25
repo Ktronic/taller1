@@ -1,0 +1,35 @@
+<div class="row" *ngFor="let post of posts">
+
+  <div class="col posts">
+    <h2>{{ post.title.charAt(0).toUpperCase() + post.title.slice(1) }}</h2>
+    <a [routerLink]="['/user', post.userId]">Ver Autor</a>
+    <p>{{ post.body }}</p>
+    <!-- localhost:4200/user/1  -->
+    <!-- para generar el botón con emmet .btn.btn-secondary -->
+    <!-- <p>id del post: {{ post.id }}</p> -->
+
+    <button class="btn btn-secondary" (click)="commentById(post.id)">{{messageButton}}</button>
+
+    <!-- Comentarios de los posts -->
+    <ng-container *ngFor="let comment of commentsFilter">
+      <div *ngIf="comment.postId === post.id && isVisible == true" class="mt-3 col-sm-10 offset-sm-1">
+        <label class="fw-bold">User: {{ comment.email}}</label>
+        <br>
+        <label class="fw-bold">Respuesta:</label>
+        <p>{{ comment.body }}</p>
+      </div>
+    </ng-container>
+    <hr>
+  </div>
+</div>
+
+<!-- alt + 96 -->
+
+    <!-- 
+    hola Mundo
+    h transformo en H
+    H + ola Mundo = Hola Mundo 
+    -->
+
+
+    <!-- http://localhost:4200/user/20 -->

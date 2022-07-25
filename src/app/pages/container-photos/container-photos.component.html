@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="row">
+ <!-- la que se tendria que repetir con el *ngFor -->
+    <div class="col-4" *ngFor="let Photos of photos">
+
+      <div  class="card" style="width: 20rem;">
+        <img src="{{ Photos.thumbnailUrl }}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ Photos.title }}</h5>
+          <p class="card-text">Albun: {{ Photos.albumId }} Foto número: {{ Photos.id }}</p>
+          <a href="{{ Photos.url }}" class="btn btn-primary">Ver imagen</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+</div>

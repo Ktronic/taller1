@@ -1,0 +1,25 @@
+<div class="container">
+  
+  <h1 class="text-center">Lista de Usuarios</h1>
+
+  <table class="table"  >
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Nick</th>
+        <th>Email</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="users">
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.username}}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address?.street }} - {{ user.address?.suite}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
