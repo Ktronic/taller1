@@ -16,6 +16,7 @@ export class PhotoIdComponent implements OnInit {
   constructor(private activatedRoute:ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.getPhotoByIdApi();
   }
 
      getPhotoByIdApi() {
